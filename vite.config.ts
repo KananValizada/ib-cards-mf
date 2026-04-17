@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'remote_cards',
+      name: 'cards',
       filename: 'remoteEntry.js',
       exposes: {
     './CardsPage': './src/CardsPage.tsx'
