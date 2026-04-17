@@ -11,7 +11,14 @@ export default defineConfig({
       exposes: {
     './CardsPage': './src/CardsPage.tsx'
     },
-      shared: ['react', 'react-dom'],
+    shared: { 
+        react: {
+          requiredVersion: '^19.2.4',
+        },
+        'react-dom': {
+          requiredVersion: '^19.2.4',
+        },
+    }
     }),
   ],
   build: {
